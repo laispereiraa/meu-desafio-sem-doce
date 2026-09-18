@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar ao celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Desafio Sem Doce 🍓</title>
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+    <header class="cabecalho">
+        <div class="logo">
+            🍓 Meu Desafio Sem Doce
+        </div>
+
+        <button id="btn-tema" class="btn-tema" aria-label="Alternar tema">
+            🌙
+        </button>
+    </header>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+    <main class="container">
+
+        <!-- Título principal -->
+        <section class="introducao">
+            <p class="subtitulo">MEU DESAFIO</p>
+
+            <h1>
+                Quantos dias sem doce?
+            </h1>
+
+            <p>
+                Cada dia é uma pequena vitória. 🍓
+            </p>
+        </section>
+
+
+        <!-- =========================
+             CONTADOR PRINCIPAL
+        ========================== -->
+        <section class="card contador-card">
+
+            <span class="icone-contador">🔥</span>
+
+            <h2>Sequência atual</h2>
+
+            <div id="contador-dias" class="contador-dias">
+                0
+            </div>
+
+            <p class="texto-dias">
+                dias sem comer doce
+            </p>
+
+            <!-- Contador de horas/minutos -->
+            <div class="tempo-detalhado">
+
+                <div>
+                    <strong id="contador-horas">00</strong>
+                    <span>horas</span>
+                </div>
+
+                <div>
+                    <strong id="contador-minutos">00</strong>
+                    <span>minutos</span>
+                </div>
+
+                <div>
+                    <strong id="contador-segundos">00</strong>
+                    <span>segundos</span>
+                </div>
+
+            </div>
+
+            <p id="mensagem-motivacional" class="mensagem">
+                Vamos começar! 💪
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMAÇÕES DA SEQUÊNCIA
+        ========================== -->
+        <section class="grid-informacoes">
+
+            <!-- Data de início -->
+            <div class="card informacao">
+                <span class="icone">📅</span>
+
+                <h3>Comecei em</h3>
+
+                <p id="data-inicio">
+                    Ainda não definido
+                </p>
+            </div>
+
+
+            <!-- Recorde -->
+            <div class="card informacao">
+                <span class="icone">🏆</span>
+
+                <h3>Meu recorde</h3>
+
+                <p>
+                    <span id="recorde">0</span> dias
+                </p>
+            </div>
+
+
+            <!-- Próxima meta -->
+            <div class="card informacao">
+                <span class="icone">🎯</span>
+
+                <h3>Próxima meta</h3>
+
+                <p>
+                    <span id="proxima-meta">7</span> dias
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BARRA DE PROGRESSO
+        ========================== -->
+        <section class="card metas">
+
+            <div class="titulo-secao">
+                <div>
+                    <span class="icone">🎯</span>
+                    <h2>Minha próxima meta</h2>
+                </div>
+
+                <span id="texto-progresso">
+                    0 / 7 dias
+                </span>
+            </div>
+
+            <div class="barra-fundo">
+                <div
+                    id="barra-progresso"
+                    class="barra-progresso"
+                    style="width: 0%;">
+                </div>
+            </div>
+
+            <p id="mensagem-meta">
+                Faltam 7 dias para sua primeira meta! 🚀
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             METAS
+        ========================== -->
+        <section class="card">
+
+            <div class="titulo-secao">
+                <div>
+                    <span class="icone">🏅</span>
+                    <h2>Minhas metas</h2>
+                </div>
+            </div>
+
+            <div class="lista-metas">
+
+                <div class="meta" data-meta="7">
+                    <span>🥉</span>
+                    <div>
+                        <strong>7 dias</strong>
+                        <p>Primeira semana!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+
+                <div class="meta" data-meta="15">
+                    <span>🥈</span>
+                    <div>
+                        <strong>15 dias</strong>
+                        <p>Duas semanas de foco!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+
+                <div class="meta" data-meta="30">
+                    <span>🥇</span>
+                    <div>
+                        <strong>30 dias</strong>
+                        <p>Um mês sem doce!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+
+                <div class="meta" data-meta="60">
+                    <span>💎</span>
+                    <div>
+                        <strong>60 dias</strong>
+                        <p>Dois meses!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+
+                <div class="meta" data-meta="90">
+                    <span>👑</span>
+                    <div>
+                        <strong>90 dias</strong>
+                        <p>Três meses!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+
+                <div class="meta" data-meta="100">
+                    <span>💯</span>
+                    <div>
+                        <strong>100 dias</strong>
+                        <p>Desafio dos 100!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+
+                <div class="meta" data-meta="365">
+                    <span>🌟</span>
+                    <div>
+                        <strong>365 dias</strong>
+                        <p>Um ano inteiro!</p>
+                    </div>
+                    <span class="status-meta">🔒</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AÇÕES
+        ========================== -->
+        <section class="acoes">
+
+            <button id="btn-comecar" class="btn btn-principal">
+                🍓 Começar meu desafio
+            </button>
+
+            <button id="btn-resetar" class="btn btn-perigo">
+                😭 Comi doce
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             HISTÓRICO
+        ========================== -->
+        <section class="card historico">
+
+            <div class="titulo-secao">
+                <div>
+                    <span class="icone">📖</span>
+                    <h2>Meu histórico</h2>
+                </div>
+            </div>
+
+            <div id="lista-historico" class="lista-historico">
+
+                <div class="historico-vazio">
+                    <span>🍓</span>
+
+                    <p>
+                        Seu histórico aparecerá aqui.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ANOTAÇÕES
+        ========================== -->
+        <section class="card anotacoes">
+
+            <div class="titulo-secao">
+                <div>
+                    <span class="icone">📝</span>
+                    <h2>Como estou me sentindo?</h2>
+                </div>
+            </div>
+
+            <textarea
+                id="campo-anotacao"
+                placeholder="Escreva aqui como foi seu dia..."
+                maxlength="500">
+            </textarea>
+
+            <button id="btn-salvar-anotacao" class="btn btn-secundario">
+                💾 Salvar anotação
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             ESTATÍSTICAS
+        ========================== -->
+        <section class="card estatisticas">
+
+            <div class="titulo-secao">
+                <div>
+                    <span class="icone">📊</span>
+                    <h2>Minhas estatísticas</h2>
+                </div>
+            </div>
+
+            <div class="grid-estatisticas">
+
+                <div>
+                    <strong id="total-dias">0</strong>
+                    <span>Dias registrados</span>
+                </div>
+
+                <div>
+                    <strong id="total-metas">0</strong>
+                    <span>Metas conquistadas</span>
+                </div>
+
+                <div>
+                    <strong id="vezes-resetou">0</strong>
+                    <span>Recomeços</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+    <footer class="rodape">
+
+        <p>
+            Feito com ❤️ para o meu desafio.
+        </p>
+
+        <p>
+            <span id="ano-atual"></span> • Meu Desafio Sem Doce
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         MODAL DE CONFIRMAÇÃO
+    ========================== -->
+    <div id="modal-confirmacao" class="modal escondido">
+
+        <div class="modal-conteudo">
+
+            <button id="btn-fechar-modal" class="fechar-modal">
+                ×
+            </button>
+
+            <span class="modal-icone">
+                😭
+            </span>
+
+            <h2>Você comeu doce?</h2>
+
+            <p>
+                Tudo bem! O importante é continuar.
+                Sua sequência atual será reiniciada.
+            </p>
+
+            <div class="modal-acoes">
+
+                <button id="btn-confirmar-reset" class="btn btn-perigo">
+                    Sim, recomeçar
+                </button>
+
+                <button id="btn-cancelar-reset" class="btn btn-secundario">
+                    Não, continuar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MODAL DE NOVA DATA
+    ========================== -->
+    <div id="modal-inicio" class="modal escondido">
+
+        <div class="modal-conteudo">
+
+            <span class="modal-icone">
+                🍓
+            </span>
+
+            <h2>Quando começou?</h2>
+
+            <p>
+                Escolha a data em que você começou seu desafio.
+            </p>
+
+            <input
+                type="date"
+                id="data-escolhida">
+
+            <div class="modal-acoes">
+
+                <button id="btn-confirmar-inicio" class="btn btn-principal">
+                    Começar! 🍓
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
